@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data/style.css">
+    <title>Guess My Color 2</title>
+</head>
+
+<body>
+    <div id="blocPage">
+        <header>
+            <h1>Guess My Color 2</h1>
+            <h3>(développé par Aeldro)</h3>
+        </header>
+        <hr>
+        <main>
+            <div id="notWinnerBlock">
+                <h2>Sélectionne un niveau et devine la couleur dominante.</h2>
+            </div>
+            <div id="winnerBlock" class="winner hidden">
+                <h2>Félicitations ! Vous avez terminé tous les niveaux !</h2>
+                <img class="winnerImg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gold_Cup_icon.svg/1200px-Gold_Cup_icon.svg.png"
+                    alt="">
+            </div>
+            <hr>
+
+            <!-- Level 1 area -->
+
+            <button id="lvl1ColoredBtn" class="coloredLvlBtn lvlBtn">Niveau 1</button>
+            <button id="lvl1UncoloredBtn" class="uncoloredLvlBtn lvlBtn hidden">Niveau 1</button>
+            <div id="lvl1Container" class="lvlContainer hidden">
+                <div id="lvl1PlayingWindow" class="lvlWindow hidden">
+                    <h2>Quelle est la couleur dominante?</h2>
+                    <p class="progressTxt">-/20</p>
+                    <p class="lvlLives">-1</p>
+                    <div id="lvl1ColoredWindow" class="coloredWindow"></div>
+                    <button class="answerBtn redBtn">Rouge</button>
+                    <button class="answerBtn greenBtn">Vert</button>
+                    <button class="answerBtn blueBtn">Bleu</button>
+                    <button class="answerBtn leaveBtn">Quitter la partie</button>
+                </div>
+                <div id="lvl1NextWindow" class="lvlWindow hidden">
+                    <h2 id="lvl1CorrectFalseText">Correct ! / Faux ! La réponse était ...</h2>
+                    <h3 id="lvl1RgbText">RGB: </h3>
+                    <p id="lvl1RedTxt" class="redTxt">%</p>
+                    <p id="lvl1GreenTxt" class="greenTxt">%</p>
+                    <p id="lvl1BlueTxt" class="blueTxt">%</p>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl1NextBtn" class="answerBtn nextBtn">Suite</button>
+                </div>
+                <div id="lvl1GameOverWindow" class="lvlWindow hidden">
+                    <h1 id="lvl1GameOverText" class="gameOver">Game Over</h1>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl1GameOverBtn" class="answerBtn gameOverBtn">Suite</button>
+                </div>
+                <div id="lvl1SucceedWindow" class="lvlWindow hidden">
+                    <h2 id="lvl1SucceedText" class="succeed">Félicitations ! Vous avez terminé le niveau.</h2>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl1SucceedBtn" class="answerBtn succeedBtn">Suite</button>
+                </div>
+            </div>
+
+            <!-- Level 2 area -->
+
+            <button id="lvl2ColoredBtn" class="coloredLvlBtn lvlBtn hidden">Niveau 2</button>
+            <button id="lvl2UncoloredBtn" class="uncoloredLvlBtn lvlBtn">Niveau 2</button>
+            <div id="lvl2Container" class="lvlContainer hidden">
+                <div id="lvl2PlayingWindow" class="lvlWindow hidden">
+                    <h2>Quelle est la couleur dominante?</h2>
+                    <p class="progressTxt">-/20</p>
+                    <p class="lvlLives">-1</p>
+                    <div id="lvl2ColoredWindow" class="coloredWindow"></div>
+                    <button class="answerBtn redBtn">Rouge</button>
+                    <button class="answerBtn greenBtn">Vert</button>
+                    <button class="answerBtn blueBtn">Bleu</button>
+                    <button class="answerBtn leaveBtn">Quitter la partie</button>
+                </div>
+                <div id="lvl2NextWindow" class="lvlWindow hidden">
+                    <h2 id="lvl2CorrectFalseText">Correct ! / Faux ! La réponse était ...</h2>
+                    <h3 id="lvl2RgbText">RGB: </h3>
+                    <p id="lvl2RedTxt" class="redTxt">%</p>
+                    <p id="lvl2GreenTxt" class="greenTxt">%</p>
+                    <p id="lvl2BlueTxt" class="blueTxt">%</p>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl2NextBtn" class="answerBtn nextBtn">Suite</button>
+                </div>
+                <div id="lvl2GameOverWindow" class="lvlWindow hidden">
+                    <h1 id="lvl2GameOverText" class="gameOver">Game Over</h1>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl2GameOverBtn" class="answerBtn gameOverBtn">Suite</button>
+                </div>
+                <div id="lvl2SucceedWindow" class="lvlWindow hidden">
+                    <h2 id="lvl2SucceedText" class="succeed">Félicitations ! Vous avez terminé le niveau.</h2>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl2SucceedBtn" class="answerBtn succeedBtn">Suite</button>
+                </div>
+            </div>
+
+            <!-- Level 3 area -->
+
+            <button id="lvl3ColoredBtn" class="coloredLvlBtn lvlBtn hidden">Niveau 3</button>
+            <button id="lvl3UncoloredBtn" class="uncoloredLvlBtn lvlBtn">Niveau 3</button>
+            <div id="lvl3Container" class="lvlContainer hidden">
+                <div id="lvl3PlayingWindow" class="lvlWindow hidden">
+                    <h2>Quelle est la couleur dominante?</h2>
+                    <p class="progressTxt">-/20</p>
+                    <p class="lvlLives">-1</p>
+                    <div id="lvl3ColoredWindow" class="coloredWindow"></div>
+                    <button class="answerBtn redBtn">Rouge</button>
+                    <button class="answerBtn greenBtn">Vert</button>
+                    <button class="answerBtn blueBtn">Bleu</button>
+                    <button class="answerBtn leaveBtn">Quitter la partie</button>
+                </div>
+                <div id="lvl3NextWindow" class="lvlWindow hidden">
+                    <h2 id="lvl3CorrectFalseText">Correct ! / Faux ! La réponse était ...</h2>
+                    <h3 id="lvl3RgbText">RGB: </h3>
+                    <p id="lvl3RedTxt" class="redTxt">%</p>
+                    <p id="lvl3GreenTxt" class="greenTxt">%</p>
+                    <p id="lvl3BlueTxt" class="blueTxt">%</p>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl3NextBtn" class="answerBtn nextBtn">Suite</button>
+                </div>
+                <div id="lvl3GameOverWindow" class="lvlWindow hidden">
+                    <h1 id="lvl3GameOverText" class="gameOver">Game Over</h1>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl3GameOverBtn" class="answerBtn gameOverBtn">Suite</button>
+                </div>
+                <div id="lvl3SucceedWindow" class="lvlWindow hidden">
+                    <h2 id="lvl3SucceedText" class="succeed">Félicitations ! Vous avez terminé le niveau.</h2>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl3SucceedBtn" class="answerBtn succeedBtn">Suite</button>
+                </div>
+            </div>
+
+            <!-- Level 4 area -->
+
+            <button id="lvl4ColoredBtn" class="coloredLvlBtn lvlBtn hidden">Niveau 4</button>
+            <button id="lvl4UncoloredBtn" class="uncoloredLvlBtn lvlBtn">Niveau 4</button>
+            <div id="lvl4Container" class="lvlContainer hidden">
+                <div id="lvl4PlayingWindow" class="lvlWindow hidden">
+                    <h2>Quelle est la couleur dominante?</h2>
+                    <p class="progressTxt">-/20</p>
+                    <p class="lvlLives">-1</p>
+                    <div id="lvl4ColoredWindow" class="coloredWindow"></div>
+                    <button class="answerBtn redBtn">Rouge</button>
+                    <button class="answerBtn greenBtn">Vert</button>
+                    <button class="answerBtn blueBtn">Bleu</button>
+                    <button class="answerBtn leaveBtn">Quitter la partie</button>
+                </div>
+                <div id="lvl4NextWindow" class="lvlWindow hidden">
+                    <h2 id="lvl4CorrectFalseText">Correct ! / Faux ! La réponse était ...</h2>
+                    <h3 id="lvl4RgbText">RGB: </h3>
+                    <p id="lvl4RedTxt" class="redTxt">%</p>
+                    <p id="lvl4GreenTxt" class="greenTxt">%</p>
+                    <p id="lvl4BlueTxt" class="blueTxt">%</p>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl4NextBtn" class="answerBtn nextBtn">Suite</button>
+                </div>
+                <div id="lvl4GameOverWindow" class="lvlWindow hidden">
+                    <h1 id="lvl4GameOverText" class="gameOver">Game Over</h1>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl4GameOverBtn" class="answerBtn gameOverBtn">Suite</button>
+                </div>
+                <div id="lvl4SucceedWindow" class="lvlWindow hidden">
+                    <h2 id="lvl4SucceedText" class="succeed">Félicitations ! Vous avez terminé le niveau.</h2>
+                    <p class="lvlLives">-1</p>
+                    <button id="lvl4SucceedBtn" class="answerBtn succeedBtn">Suite</button>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p>© 2021 Aeldro</p>
+            <hr>
+        </footer>
+    </div>
+
+    <script src="data/script.js"></script>
+</body>
+
+</html>
