@@ -82,7 +82,7 @@ h3 {
 button {
     text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
     color: white;
-    margin: 0.3rem auto;
+    margin: auto;
     border-radius: 30px;
     font-weight: bold;
     border: 2px black solid;
@@ -94,6 +94,7 @@ button {
 
 .lvlBtn {
     font-size: 1.8rem;
+    margin: 0.3rem auto;
 }
 
 .coloredLvlBtn:hover {
@@ -172,7 +173,7 @@ button {
     width: 90%;
     max-width: 400px;
     aspect-ratio: 1.6;
-    margin: 1rem auto;
+    margin: auto;
     border-radius: 5px;
     border: 2px gray solid;
 }
@@ -180,6 +181,11 @@ button {
 .lvlWindow {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lvlWindow * {
+
 }
 
 /* ********** AUTRE ********** */
